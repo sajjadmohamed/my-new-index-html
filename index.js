@@ -13,3 +13,27 @@ function sajjad() {
 }
 //mix = confirm("hhuhih");
 //alert(mix)
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".ml10");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+	/\S/g,
+	"<span class='letter'>$&</span>"
+);
+
+anime
+	.timeline({loop: true})
+	.add({
+		targets: ".ml10 .letter",
+		opacity: [0, 1],
+		easing: "easeInOutQuad",
+		duration: 1250,
+		delay: (el, i) => 150 * (i + 1),
+	})
+	.add({
+		targets: ".ml10",
+		opacity: 0,
+		duration: 100000,
+		easing: "easeOutExpo",
+		delay: 100000,
+	});
