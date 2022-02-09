@@ -16,10 +16,10 @@ var age = prompt("Whats Your Age?");
 
 if (age == 18) {
 	alert("Welcome to my page");
-} else if (age < 18) {
-	alert("Sorry can't access the page!");
+} else if (age >= 18) {
+	alert("Welcome to my project");
 } else {
-	alert("Put a tyr again");
+	alert("Sorry can't access the page!");
 }
 
 //mix = confirm("hhuhih");
