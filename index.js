@@ -1,5 +1,5 @@
 function rasuol() {
-	let sajjad1 = "Hi this is Const, 10 + 10 =?";
+	let sajjad1 = "Hi this is Const, 10 + 10 = ?";
 	const x = 10;
 	const z = 10;
 	let y = x + z;
@@ -11,6 +11,17 @@ function sajjad() {
 	let sajjad2 = "this is Date";
 	document.getElementById("demo1").innerHTML = sajjad2 + "<h2>" + Date();
 }
+
+var age = prompt("Whats Your Age?");
+
+if (age == 18) {
+	alert("Welcome to my page");
+} else if (age < 18) {
+	alert("Sorry can't access the page!");
+} else {
+	alert("Put a tyr again");
+}
+
 //mix = confirm("hhuhih");
 //alert(mix)
 
